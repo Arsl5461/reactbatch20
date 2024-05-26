@@ -13,10 +13,8 @@ const Contact = () => {
     const onChange = (e) => {
         setData({...data,[e.target.name]: e.target.value });
     }
-    console.log(data);
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log(data);
         toast.success("Data saved successfully")
         setData({
             name: "",
